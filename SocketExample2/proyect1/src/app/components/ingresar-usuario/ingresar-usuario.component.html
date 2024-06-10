@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="box">
+    <h1><span>Chat virtual</span> <i class="fas fa-comment"></i></h1>
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="name">Nombre <i class="fas fa-user"></i></label>
+        <input [(ngModel)]="username" [ngModelOptions]="{standalone: true}" id="name" type="text" placeholder="Ingresa tu nombre" />
+      </div>
+      <div class="btn">
+        <button type="submit">Comenzar a chatear <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </form>
+  </div>
+</div>
